@@ -1,0 +1,5 @@
+requests
+kombu
+Django
+django-celery
+celery

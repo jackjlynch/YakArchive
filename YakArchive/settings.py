@@ -37,7 +37,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'yaks'
+    'yaks',
+    'kombu.transport.django',
+    'djcelery',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'YakArchive.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,3 +107,8 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
+
+BROKER_URL = "django://"
+
+import djcelery
+djcelery.setup_loader()

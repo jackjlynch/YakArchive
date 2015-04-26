@@ -2,20 +2,35 @@ from django.db import models
 
 # Create your models here.
 class Yak(models.Model):
-    poster_id = models.CharField(max_length=13)
+    poster_id = models.TextField()
     hide_pin = models.BooleanField()
-    message_id = models.CharField(max_length=31)
+    message_id = models.TextField(primary_key=True)
+    delivery_id = models.TextField(blank=True)
+    comments = models.IntegerField()
+    time = models.TextField()
     longitude = models.FloatField()
     latitude = models.FloatField()
     likes = models.IntegerField()
-    message = models.CharField(max_length=200)
+    message = models.TextField()
     reyaked = models.BooleanField()
-    handle = models.CharField(max_length=15, blank=True)
+    handle = models.TextField(blank=True, null=True)
+    type = models.TextField()
+
 
     yaklocation = models.ForeignKey('YakLocation')
-    rawdata = models.TextField()
+
+class Comment(models.Model):
+    message_id = models.TextField()
+    comment_id = models.TextField(primary_key=True)
+    comment = models.TextField()
+    time = models.TextField()
+    likes = models.IntegerField()
+    poster_id = models.TextField()
 
 class YakLocation(models.Model):
-    name = models.TextField()
+    name = models.TextField(primary_key=True)
     latitude = models.FloatField()
     longitude = models.FloatField()
+
+    def __str__(self):
+        return self.name
