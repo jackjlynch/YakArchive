@@ -7,7 +7,7 @@ class Yak(models.Model):
     message_id = models.TextField(primary_key=True)
     delivery_id = models.TextField(blank=True)
     comments = models.IntegerField()
-    time = models.TextField()
+    time = models.DateTimeField()
     longitude = models.FloatField()
     latitude = models.FloatField()
     likes = models.IntegerField()
@@ -23,7 +23,7 @@ class Comment(models.Model):
     message_id = models.TextField()
     comment_id = models.TextField(primary_key=True)
     comment = models.TextField()
-    time = models.TextField()
+    time = models.DateTimeField()
     likes = models.IntegerField()
     poster_id = models.TextField()
 
@@ -31,6 +31,7 @@ class YakLocation(models.Model):
     name = models.TextField(primary_key=True)
     latitude = models.FloatField()
     longitude = models.FloatField()
+    timezone = models.TextField()
 
     def __str__(self):
         return self.name

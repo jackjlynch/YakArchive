@@ -4,7 +4,11 @@
     <list default="true" id="750ce124-160f-4053-a7ed-8de2e3e43cef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/celerybeat-schedule.dat" afterPath="$PROJECT_DIR$/celerybeat-schedule.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yaks/admin.py" afterPath="$PROJECT_DIR$/yaks/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/celerybeat-schedule.bak" afterPath="$PROJECT_DIR$/celerybeat-schedule.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/celerybeat-schedule.dir" afterPath="$PROJECT_DIR$/celerybeat-schedule.dir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/celerybeat.pid" afterPath="$PROJECT_DIR$/celerybeat.pid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yaks/models.py" afterPath="$PROJECT_DIR$/yaks/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yaks/tasks.py" afterPath="$PROJECT_DIR$/yaks/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YakArchive.iws" />
@@ -49,7 +53,7 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
-                <element signature="e#21#53#0" expanded="true" />
+                <marker date="1430030564124" expanded="true" signature="21:73" placeholder="import ..." />
               </folding>
             </state>
           </provider>
@@ -59,17 +63,19 @@
         <entry file="file://$PROJECT_DIR$/yaks/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-              <folding />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yaks/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.77272725" vertical-offset="0" max-vertical-offset="612">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
                 <element signature="e#20#61#0" expanded="true" />
               </folding>
@@ -89,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yaks/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23247863" vertical-offset="0" max-vertical-offset="585">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -104,8 +110,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yaks/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="697">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="714">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -131,13 +137,13 @@
       <list>
         <option value="$PROJECT_DIR$/YakArchive/celery.py" />
         <option value="$PROJECT_DIR$/YakArchive/__init__.py" />
-        <option value="$PROJECT_DIR$/yaks/models.py" />
-        <option value="$PROJECT_DIR$/yaks/tasks.py" />
         <option value="$PROJECT_DIR$/YakArchive/settings.py" />
         <option value="$PROJECT_DIR$/yaks/urls.py" />
         <option value="$PROJECT_DIR$/YakArchive/urls.py" />
         <option value="$PROJECT_DIR$/yaks/views.py" />
         <option value="$PROJECT_DIR$/yaks/admin.py" />
+        <option value="$PROJECT_DIR$/yaks/models.py" />
+        <option value="$PROJECT_DIR$/yaks/tasks.py" />
       </list>
     </option>
   </component>
@@ -145,8 +151,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1041" />
-    <option name="y" value="136" />
+    <option name="x" value="1083" />
+    <option name="y" value="144" />
     <option name="width" value="1400" />
     <option name="height" value="1023" />
   </component>
@@ -489,7 +495,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1041" y="136" width="1400" height="1023" extended-state="0" />
+    <frame x="1083" y="144" width="1400" height="1023" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -561,16 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yaks/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="e#20#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YakArchive/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="2023">
@@ -584,7 +580,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <element signature="e#21#53#0" expanded="true" />
+            <marker date="1430030564124" expanded="true" signature="21:73" placeholder="import ..." />
           </folding>
         </state>
       </provider>
@@ -592,7 +588,17 @@
     <entry file="file://$PROJECT_DIR$/yaks/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yaks/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="714">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -607,20 +613,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yaks/models.py">
+    <entry file="file://$PROJECT_DIR$/yaks/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="697">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yaks/admin.py">
+    <entry file="file://$PROJECT_DIR$/yaks/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23247863" vertical-offset="0" max-vertical-offset="585">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.77272725" vertical-offset="0" max-vertical-offset="612">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#20#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
