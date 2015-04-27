@@ -22,8 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '&5)+y(q*4m_&74%la71c1ybb-v_!v8*xsizx6o-74dv_^m&hh4'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#enable debug for testing
+import socket
+if socket.gethostname() == 'wharbox-windows':
+    DEBUG = True
+else:
+    DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'yakarchive', 'yak.wharnal.com']
 
