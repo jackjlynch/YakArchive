@@ -3,9 +3,9 @@
 
 ##To run:
 ----
-* manage.py runserver
-* manage.py celerybeat
-* manage.py celeryd -v 2 -s celery -E -l INFO
+* python3 manage.py runserver
+* python3 manage.py celeryd -v 2 -B -s celery -E -l INFO > celeryd.log 2>&1 &
+
 
 
 Currently deployed at yak.wharnal.com
