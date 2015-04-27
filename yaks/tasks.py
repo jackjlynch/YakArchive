@@ -2,7 +2,7 @@ __author__ = 'Jack'
 from celery.task.schedules import crontab
 from celery.decorators import periodic_task
 from yaks.models import Yak, YakLocation, Comment
-from ..YikYakTerminal.API import Location, Yakker
+from .YikYakTerminal.API import Location, Yakker
 import datetime, pytz
 
 @periodic_task(run_every=crontab(hour="*", minute="*", day_of_week="*"))
