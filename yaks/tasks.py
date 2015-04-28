@@ -19,11 +19,12 @@ def getYaks():
                         time=tztime, longitude=yak.longitude,
                         latitude=yak.latitude, likes=yak.likes, message=yak.message,
                         reyaked=yak.reyaked, handle=yak.handle, type=yak.type, yaklocation=location)
+                y.save()
             else:
-                y = Yak.objects.filter(message_id=yak.message_id)[0]
+                y = Yak.objects.get(message_id=yak.message_id)
                 y.comments = int(yak.comments)
                 y.likes = yak.likes
-            y.save()
+                y.save()
             for comment in yakker.get_comments(yak.message_id):
                 if Comment.objects.filter(comment_id=comment.comment_id).count() == 0:
                     tztime = datetime.datetime.strptime(comment.time, "%Y-%m-%d %H:%M:%S")
@@ -32,7 +33,8 @@ def getYaks():
                     c = Comment(message_id=comment.message_id, comment_id=comment.comment_id, comment=comment.comment,
                                 time=tztime, likes=comment.likes,
                                 poster_id=comment.poster_id)
+                    c.save()
                 else:
-                    c = Comment.objects.filter(comment_id=comment.comment_id)[0]
+                    c = Comment.objects.get(comment_id=comment.comment_id)
                     c.likes = comment.likes
-                c.save()
+                    c.save()
